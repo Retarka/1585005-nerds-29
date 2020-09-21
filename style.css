@@ -42,6 +42,12 @@ body {
 }
 
 .button-default{
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height:18px;
+   text-align:center;
+   color: var(--basic-white);
 }
 	
  
@@ -66,9 +72,6 @@ img {
 .site-navigation {
 	list-style:none;
 }
-.site-navigation a:not([href]) {
-  background-color: var(--basic-background-shade-gray);
-}
 
 .site-navigation a,
 .cart-link {
@@ -80,7 +83,7 @@ img {
 .site-navigation a:focus,
 .cart-link a:hover,
 .cart-link a:focus {
-	background-color: var(--special-red-activ);
+	color: var(--special-red-activ);
 }
 
 
@@ -141,30 +144,16 @@ img {
 	
 }
 
-.button-servicesr{
-	background-color:var(--basic-red);
-}
-  .button-servicesr:hover,
-  .button-servicesr:focus {
-  background-color:var(--special-red-activ);
+.button-web {
+	 background-color: var(--basic-red);
 }
 
-.button-servicesg{
-    background-color:var(--basic-green); 
-}
- 
-.button-servicesg:hover,
-.button-servicesg:focus {
-  background-color:var(--special-green-activ);
+.button-app {
+     background-color: var(--basic-green);
 }
 
-
-.button-servicesy{
-	background-color:var(--basic-yellow);
-}
-  .button-servicesy:hover,
-  .button-servicesy:focus {
-  background-color:var(--special-yellow-activ);
+.button-pitch{
+	background-color: var(--basic-yellow)
 }
 
 .about {
@@ -200,11 +189,15 @@ img {
 
 }
 
-.company-content a:hover,
-.company-content a:focus {
-	 background-color:var(--basic-black); /* тут что-то не так, знать бы что */
+.company-content a {
+    opacity: 0.2;
+}
+.company-content a:hover {
+   opacity: 1;
 }
 
+.company-content a:activ{
+	opacity: 0.1;
 }
 
 .main-footer{
