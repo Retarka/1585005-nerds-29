@@ -82,9 +82,27 @@
 
      	 <h4>С 2004 года любим точность во всем:</h4>
      	 <ul>
-     	    <li class="about-item">146<sup class="sup">%</sup>Уровень самоотдачи</li>          <!--Тут мне нужно стилизовать числа? Если добавить стиль, то какой лучше? --> 
-     	    <li class="about-item">100<sup class="sup">%</sup>Соблюдение сроков</li>
-     	    <li class="about-item">50<sup class="sup">%</sup>Минимальная предоплата</li>
+
+     	    <li class="about-item">
+    <span class="about-item-percent">
+        146<sup class="sup">%</sup>
+    </span>
+    Уровень самоотдачи
+         </li> 
+
+     	    <li class="about-item">
+            <span class="about-item-percent">
+             100<sup class="sup">%</sup>
+           </span>
+           Соблюдение сроков
+         </li>
+
+     	    <li class="about-item">
+            <span class="about-item-percent">50
+              <sup class="sup">%</sup>
+            </span>
+            Минимальная предоплата
+          </li>
      	</ul>
        
        <img src="img/nerds-illustration1.png" width="360" height="208" alt="nerds-illustration">
@@ -93,16 +111,16 @@
      <section class="company">
      	<h2>Компании</h2>
      	
-     	<a class="company-content">
+     	<a class="company-content" href="blank.html">
      		<img src="img/Group5.svg" width="199" height="68" alt="HTMLACADEMY">
      	</a>
-     	<a class="company-content">
+     	<a class="company-content" href="blank.html">
      		<img src="img/logo-22.jpg" width="209" height="90" alt="Барбершоп «Бородинский»">
      	</a>
-     	<a class="company-content">
+     	<a class="company-content" href="blank.html">
      		<img src="img/logo-32.jpg" width="185" height="52" alt="PINK">
      	</a>
-     	<a class="company-content">
+     	<a class="company-content" href="blank.html">
      		<img src="img/logo-42.jpg" width="173" height="84" alt="MISHKA">
      	</a>
      </section>
@@ -111,13 +129,15 @@
       <!-- Подвал -->
       <section class="contacts">
       
-      	<h2>Контакты</h2>
-      	<p class="contacts-info">
-      <p> NERDS DESIGN STUDIO <br>
-      Адрес: 191186 г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      Телефон: +7 (812) 275-75-75
+      	<h2 class="visually-hidden">Контакты</h2> <!-- пототому что этого как бы нет-->
+      	<div class="contacts-info">
+      <h3> NERDS DESIGN STUDIO </h3> 
+      <p class="address">
+       191186 г. Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+      <a href="tel:+78122757575"><br>+7 (812) 275-75-75</a>
     </p>
-    <a  class="button-contacts button-default" href="blank.html">НАПИШИТЕ НАМ</a> 
+    <a  class="button-contacts button-default" href="blank.html">Напишите нам</a>
+    </div> 
     <p>Давайте дружить,это выгодно!<br>Скидка 10% для друзей из социальных сетей.</p>
     <ul class="footer-social">
       <li>

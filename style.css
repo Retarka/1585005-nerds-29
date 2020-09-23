@@ -54,7 +54,7 @@ body {
 
 .page a {
 	text-decoration: none;
-	color:var(--basic-white);
+	color:var ;  /* главная проблема*/
 }
 
 img {
@@ -168,6 +168,16 @@ img {
 	list-style: none;
 }
 
+.about-item-percent {
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
+   
+}
+.about-item-percent .sup {
+    font-size: 26px;
+}
+
 .about h4 {
 	font-size: 16px;
 	line-height: 24px;
@@ -179,11 +189,8 @@ img {
 	line-height: 45px;
 }
 
-.sup{
-	font-size: 45px;
-    line-height: 64px;
-    color:var(--basic-black);
-}
+
+
 
 .company {
 
@@ -192,7 +199,7 @@ img {
 .company-content a {
     opacity: 0.2;
 }
-.company-content a:hover {
+.company-content a:hover{
    opacity: 1;
 }
 
@@ -209,11 +216,21 @@ img {
 }
 
 .contacts{
-	font-size: 16px;
-    line-height: 18px;
-	color:#666666;
+	
+}
+
+.contacts-info{
+   font-size: 16px;
+   line-height: 18px;
+   color:#666666;
 
 }
+.contacts-info h3{
+	font-size: 18px;
+    line-height: 30px;
+    color: var(--basic-black)
+}
+
  .footer-contacts a {
   color:#666666;
   text-decoration: underline;
@@ -227,6 +244,7 @@ img {
 }
 
 .button-contacts{
+  border-radius: 3px;	
   background-color:var(--basic-red);
 }
 
@@ -245,7 +263,7 @@ img {
 /* Social button */
 
 .social-button {
-  color: inherit;
+  color: var(--basic-black);
 }
 
 .social-button:hover,
