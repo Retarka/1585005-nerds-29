@@ -14,6 +14,8 @@
 	--gradient: 0deg, #E1E1E1, #E1E1E1;
 	--basic-light-gray: #283136;
 	--basic-background-shade-gray: #EEEEEE;
+	--special-grey-hover:#DFDFDF;
+	--special-grey-push: #D5D5D5;
 	--special-red-activ: #E74246;
 	--special-red-push: #D7373B;
 	--special-yellow-activ: #EAB534;
@@ -36,16 +38,6 @@ body {
 	
 }
 
-.button-default {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 18px;
-	text-align: center;
-	color: var(--basic-white);
-	border-radius: 3px;
-	background-color: var(--basic-red);
-}
-
 a {
 	text-decoration: none;
 	color: var(--basic-black);
@@ -56,6 +48,124 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+.inner-page .main-header {
+	background-color: var(--basic-background-shade-gray);
+}
+
+.inner-page{
+	color:var(--basic-white);
+	background-color:var(--background-gray);/* цвет var(--basic-white)*/
+	background-position: 0 0;
+	background-repeat: repeat; 
+}
+
+.page-title{
+	font-size: 55px;
+	line-height: 55px;
+	color:var(--basic-black);
+}
+
+/*kroshki*/
+
+.breadcrumbs{
+	list-style: none;
+	
+
+}
+
+.breadcrumbs a{
+	color:var(--basic-black);
+	opacity: 0.3;
+}
+
+.breadcrumbs a:hover{
+	opacity: 0.6;
+	
+}
+
+.breadcrumbs a:active{
+	
+}
+
+.breadcrumbs a:focus{
+
+}
+
+.breadcrumbs-current{
+	color:var(--basic-black);
+}
+
+/*Каталог*/
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item{
+	background-color:var(--basic-background-shade-gray);
+	color:var(--medium-gray);
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.catalog-item-price{
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.button-price{
+  
+}
+
+ .button-price:hover{
+   background-color:var(--special-red-activ); 
+ }
+
+.button-price:active{
+  background-color:var(--special-red-push);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-white);
+  background-color: var(--medium-gray);
+}
+
+.pagination-item a:hover{
+	background-color:var(--special-grey-hover);
+}
+
+.pagination-item a:active{
+	background-color:var(--special-grey-push);
+	box-shadow: inset 0px 3px 0px;
+	color:rgba(0, 1, 1, 0.1);
+
+}
+
+.pagination-item a:focus{
+	background-color:rgba(0, 0, 0, 0.0001);
+	border: 3px solid #DBDBDB;
+
+}
+
+.button-default {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	color: var(--basic-white);
+	border-radius: 3px;
+	background-color: var(--basic-red);
+}
+
 
 .main-navigation {
 	font-size: 16px;
