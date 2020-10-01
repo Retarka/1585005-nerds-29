@@ -55,88 +55,92 @@ img {
 
 .inner-page{
 	color:var(--basic-white);
-	background-color:var(--background-gray);/* цвет var(--basic-white)*/
-	background-position: 0 0;
-	background-repeat: repeat; 
+	background-color:var(--basic-white);/* цвет var(--basic-white)*/ 
+	
 }
 
 .page-title{
+	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 	color:var(--basic-black);
+
 }
 
-/*kroshki*/
+/*  ne kroshki*/
 
-.breadcrumbs{
+sort{
+
 	list-style: none;
 	
 
 }
 
-.breadcrumbs a{
+sort a{
 	color:var(--basic-black);
 	opacity: 0.3;
 }
 
-.breadcrumbs a:hover{
+sort a:hover{
 	opacity: 0.6;
 	
 }
 
-.breadcrumbs a:active{
+sort a:active{
 	
 }
 
-.breadcrumbs a:focus{
+sort a:focus{
 
 }
 
-.breadcrumbs-current{
+sort-current{
 	color:var(--basic-black);
 }
 
 /*Каталог*/
 
 .catalog-list {
-  list-style: none;
+	list-style:none;
 }
 
 .catalog-item{
-	background-color:var(--basic-background-shade-gray);
+	background-color:var(--basic-white);
 	color:var(--medium-gray);
 }
 
 .catalog-item h3 {
-  font-size: 18px;
-  line-height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
 }
 
-.catalog-item-price{
+/**/catalog-item-price/**/{
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
 }
 
 .button-price{
-  
+	
 }
 
- .button-price:hover{
-   background-color:var(--special-red-activ); 
- }
+.button-price:hover{
+	background-color:var(--special-red-activ); 
+}
 
 .button-price:active{
-  background-color:var(--special-red-push);
+	background-color:var(--special-red-push);
 }
 
 .pagination-list {
-  list-style: none;
+	list-style: none;
 }
 
 .pagination-item a {
-  color: var(--basic-white);
-  background-color: var(--medium-gray);
+	color: var(--basic-white);
+	background-color: var(--medium-gray);
 }
 
 .pagination-item a:hover{
