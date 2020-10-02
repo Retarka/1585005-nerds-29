@@ -49,14 +49,8 @@ img {
 	height: auto;
 }
 
-.inner-page .main-header {
+.main-header {
 	background-color: var(--basic-background-shade-gray);
-}
-
-.inner-page{
-	color:var(--basic-black);
-	background-color:var(--basic-white);/* цвет var(--basic-white)*/ 
-	
 }
 
 .page-title{
