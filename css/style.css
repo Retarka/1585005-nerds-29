@@ -49,6 +49,18 @@ img {
 	height: auto;
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .page {
 	height: 100%;
@@ -64,10 +76,9 @@ img {
 
 .main-header {
 	background-color: var(--basic-background-shade-gray);
-	margin-bottom: 0px;
 	
 }
-}
+
 
 .page-title{
 	font-weight: 500;
@@ -396,15 +407,15 @@ sort-current{
 
 .about {
 	display: grid;
-	grid-template-columns: 2fr 1fr; /*660px 360px*/
+	grid-template-columns: 660px 360px; /*660px 360px*/
+	grid-gap:140px;
 	width: 1160px;
-	text-align:center;
 	margin: 0 auto;
 
 }
 
 .about_1{
-	text-align: left; /* тут ведь нуэно делать через position?*/
+	text-align: left;
 }
 
 
@@ -424,6 +435,7 @@ sort-current{
 	font-size: 45px;
 	line-height: 64px;
 	color: var(--basic-black);
+	font-weight: bold;
 }
 
 .about-item-percent .sup {
