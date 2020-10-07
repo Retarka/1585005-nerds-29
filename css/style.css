@@ -50,16 +50,16 @@ img {
 }
 
 .visually-hidden{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .page {
@@ -209,7 +209,6 @@ sort-current{
 	grid-template-columns:1fr 2fr min-content;
 	width:1160px;
 	margin: 0 auto;
-	padding: 0 10px;
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--basic-black);
@@ -217,15 +216,15 @@ sort-current{
 }
 
 .center{
-	padding: 0 10px;
+	
 }
 
 
-.main-header-logo{  
-	order:0;
-	justify-self:left;
+.main-header-logo{
+	width:1160px   
+	justify-self:center;
 	opacity: 1;
-	
+	padding: 25px 20px;
 }
 
 
@@ -240,15 +239,25 @@ sort-current{
 
 
 .site-navigation {
+	display: flex;
+	flex-wrap: wrap;
 	color:var(--basic-black);
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	
+}
+
+
+.site-navigation a,
+.user_nav a {
+	padding: 25px 20px;
+	display: block;
+	margin: 45px 0px;
 }
 
 .cart-link {
-	
+	text-align: right;
+	align-items: center;
 	color: var(--basic-black);
 }
 
@@ -257,7 +266,7 @@ sort-current{
 
 }
 .site-navigation a:active{
-	color:var(--basic-black); /* тут непонятная ситуация, я разберусь в процессе*/
+	color:var(--basic-black); 
 	opacity: 0.3;
 
 
@@ -295,14 +304,17 @@ sort-current{
 
 .sliders-list {
 	width:1160px;
-	margin: 0 auto;
+	margin: 0px auto;
 	list-style: none;
 	display: flex;
 	align-items: center;
 
+
 }
 
-.sliders-list img {}
+.sliders-list img {
+
+}
 
 .button-sliders {
 	background: var(--basic-red);
@@ -323,7 +335,8 @@ sort-current{
 /* сервис */
 
 .services {
-	margin-bottom: 80px;
+	margin: 80px 80px;
+
 }
 
 .services a {}
@@ -333,6 +346,7 @@ sort-current{
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
+	text-align: center;
 }
 .services-list{
 	width:1160px;
@@ -345,14 +359,15 @@ sort-current{
 
 }
 .services-item {
-	
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 24px;
 }
 
 
-.services img {}
+.services img {
+	
+}
 
 .button-web {
 	background-color:var(--basic-red);
@@ -410,26 +425,28 @@ sort-current{
 	grid-template-columns: 660px 360px; /*660px 360px*/
 	grid-gap:140px;
 	width: 1160px;
-	margin: 0 auto;
+	margin: 0 auto 140px;
 
 }
 
-.about_1{
-	text-align: left;
-}
+.about_1{}
 
+.about_2{}
 
 .about-know{}
 
 
 .about-item {
-
 	font-size: 16px;
 	line-height: 24px;
 	list-style: none;
 }
 
-.about-precision{}
+.about-precision{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
 
 .about-item-percent {
 	font-size: 45px;
@@ -466,7 +483,7 @@ sort-current{
 	column-gap: 100px;
 	width: 1160px;
 	text-align:center;
-	margin: 0 auto;
+	margin: 0 auto 80px;
 	padding: 0;
 	list-style: none;
 }
@@ -488,26 +505,31 @@ sort-current{
 /* подвал*/
 
 .main-footer{
+
 	text-align: center;
-	padding: 80px 0;
-	margin-top: 80px;
+	margin: 0 auto;
+
 }
 
 .main-footer img {}
 
 .benefit{
-	
+	justify-self:center;
 	margin: 0;
 	width: 560px;
 	
 }
-
 .media{
+	width: 1160px;
 	display:grid;
-	grid-template-columns:1fr 2fr;/*260px 560px*/
+	grid-template-columns:260px 560px;/*260px 560px*/
+	grid-gap:140px; 
+	
+	
 }
 
 .contacts {
+	width: 1160px;
 	text-align: center;
 	height: 416px;
 	position: relative;
@@ -516,12 +538,12 @@ sort-current{
 
 .contacts a {}
 
-.contacts-info{
+.contacts-info{         /*скажи все ли верно по размерам, мне кажется, что я как-то не так измеряю? Мне просто вообще не нравится, как это выглядит*/
 	position: absolute;
-	top:100px;
-	left:320px;
-	width: 319px;
-	height: 308px;
+	top:54px;
+	left:140px;
+	width:319px;
+	height:308px;
 	font-size: 16px;
 	line-height: 18px;
 	color: var(--medium-gray);
@@ -557,7 +579,10 @@ sort-current{
 	background-color: var(--special-red-push);
 }
 
-.footer-list {
+.footer-list {  /*еще не загружала никаких иконок*/
+	display: flex;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	color:var(--medium-gray);
 }
