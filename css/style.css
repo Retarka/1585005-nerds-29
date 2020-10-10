@@ -121,8 +121,18 @@ sort-current{
 
 /*Каталог*/
 
+.catalog{
+	outline-offset: -5px;
+	outline: 5px solid rgba(0, 255, 255, 0.7);
+}
+
 .catalog-list {
-	list-style:none;
+	/*флексы для каталога */
+	/*display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style:none;*/
 }
 
 .catalog-item{
@@ -165,6 +175,14 @@ sort-current{
 	background-color:var(--special-red-push);
 }
 
+
+
+/**/
+
+.filtres{
+	outline-offset: -5px;
+	outline: 5px solid rgba(255, 0, 255, 0.7);
+}
 .pagination-list {
 	color: var(--basic-black);
 	list-style: none;
@@ -209,6 +227,8 @@ sort-current{
 	grid-template-columns:1fr 2fr min-content;
 	width:1160px;
 	margin: 0 auto;
+	padding-top:30px;
+	align-items:center;
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--basic-black);
@@ -221,10 +241,7 @@ sort-current{
 
 
 .main-header-logo{
-	width:1160px   
-	justify-self:center;
 	opacity: 1;
-	padding: 25px 20px;
 }
 
 
@@ -250,9 +267,9 @@ sort-current{
 
 .site-navigation a,
 .user_nav a {
-	padding: 25px 20px;
 	display: block;
-	margin: 45px 0px;
+	/*мне небходимо создать внутренний отступ*/
+	padding: 0px 20px;
 }
 
 .cart-link {
@@ -305,6 +322,7 @@ sort-current{
 .sliders-list {
 	width:1160px;
 	margin: 0px auto;
+	padding: 0px auto;
 	list-style: none;
 	display: flex;
 	align-items: center;
@@ -335,7 +353,7 @@ sort-current{
 /* сервис */
 
 .services {
-	margin: 80px 80px;
+	padding: 80px 80px;
 
 }
 
@@ -351,10 +369,11 @@ sort-current{
 .services-list{
 	width:1160px;
 	display: grid;
-	text-align: center;
-	grid-template-columns: 1fr 1fr 1fr; /*400px 400px 400px;*/
+	text-align: left;
+	grid-template-columns: 300px 300px 300px; 
 	column-gap: 100px;
 	margin: 0 auto;
+	padding: 0;
 	list-style: none;
 
 }
@@ -425,7 +444,8 @@ sort-current{
 	grid-template-columns: 660px 360px; /*660px 360px*/
 	grid-gap:140px;
 	width: 1160px;
-	margin: 0 auto 140px;
+	margin: 0 auto;
+	padding: 40px 40px;
 
 }
 
@@ -474,7 +494,7 @@ sort-current{
 /*company*/
 
 .company {
-
+	
 
 }
 .company-list{
@@ -483,8 +503,8 @@ sort-current{
 	column-gap: 100px;
 	width: 1160px;
 	text-align:center;
-	margin: 0 auto 80px;
-	padding: 0;
+	margin: 0 auto;
+	padding: 40px 40px;
 	list-style: none;
 }
 .company-item{}
@@ -508,37 +528,43 @@ sort-current{
 
 	text-align: center;
 	margin: 0 auto;
+	padding-top: 40px;
 
 }
 
 .main-footer img {}
 
 .benefit{
-	justify-self:center;
 	margin: 0;
 	width: 560px;
 	
 }
 .media{
-	width: 1160px;
+	width:1160px;
 	display:grid;
 	grid-template-columns:260px 560px;/*260px 560px*/
 	grid-gap:140px; 
-	
+	padding-top: 65px;
+	padding-bottom: 65px;
 	
 }
 
 .contacts {
 	width: 1160px;
-	text-align: center;
 	height: 416px;
 	position: relative;
 
+
 }
 
+.contacts img{
+	width: 1440px;
+	height: 416px;
+}
 .contacts a {}
 
-.contacts-info{         /*скажи все ли верно по размерам, мне кажется, что я как-то не так измеряю? Мне просто вообще не нравится, как это выглядит*/
+
+.contacts-info{        
 	position: absolute;
 	top:54px;
 	left:140px;
@@ -555,6 +581,9 @@ sort-current{
 	line-height: 30px;
 	color: var(--basic-black);
 }
+
+
+
 
 .address a {
 	color: var(--medium-gray);
@@ -588,7 +617,6 @@ sort-current{
 }
 
 .footer-social{
-	text-align: center;
 	margin: 0 auto;
 	width: 260px;
 }
