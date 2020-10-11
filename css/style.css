@@ -322,13 +322,19 @@ sort-current{
 .sliders-list {
 	width:1160px;
 	margin: 0px auto;
-	padding: 0px auto;
+	padding: 0;
 	list-style: none;
 	display: flex;
 	align-items: center;
+}
 
+.sliders-list li{
+	display: flex;
+	align-items: center;
 
 }
+
+
 
 .sliders-list img {
 
@@ -353,7 +359,7 @@ sort-current{
 /* сервис */
 
 .services {
-	padding: 80px 80px;
+
 
 }
 
@@ -364,7 +370,7 @@ sort-current{
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 }
 .services-list{
 	width:1160px;
@@ -374,6 +380,9 @@ sort-current{
 	column-gap: 100px;
 	margin: 0 auto;
 	padding: 0;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	
 	list-style: none;
 
 }
@@ -382,7 +391,6 @@ sort-current{
 	font-size: 16px;
 	line-height: 24px;
 }
-
 
 .services img {
 	
@@ -445,7 +453,10 @@ sort-current{
 	grid-gap:140px;
 	width: 1160px;
 	margin: 0 auto;
-	padding: 40px 40px;
+	padding: 0;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
 
 }
 
@@ -504,7 +515,9 @@ sort-current{
 	width: 1160px;
 	text-align:center;
 	margin: 0 auto;
-	padding: 40px 40px;
+	padding: 0;
+	padding-top: 80px;
+	padding-bottom: 80px; 
 	list-style: none;
 }
 .company-item{}
@@ -526,7 +539,7 @@ sort-current{
 
 .main-footer{
 
-	text-align: center;
+	
 	margin: 0 auto;
 	padding-top: 40px;
 
@@ -564,7 +577,9 @@ sort-current{
 .contacts a {}
 
 
-.contacts-info{        
+/*padding-left для текста?*/
+.contacts-info{  
+
 	position: absolute;
 	top:54px;
 	left:140px;
@@ -576,16 +591,20 @@ sort-current{
 	background-color: var(--basic-white);
 }
 .contacts-info h3{
+	
 	padding-top:50px;
 	font-size: 18px;
 	line-height: 30px;
 	color: var(--basic-black);
 }
 
-
+.address{
+	
+}
 
 
 .address a {
+	
 	color: var(--medium-gray);
 }
 
