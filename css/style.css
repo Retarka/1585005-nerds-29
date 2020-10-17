@@ -80,37 +80,32 @@ img {
 }
 
 .page-catalog{
-	outline: 5px solid rgba(255, 0, 0, 0.7);
-	outline-offset: -5px;
-	display: grid;
-	grid-template-columns: 360px 800px;
-	margin: 0 auto;
-	padding: 0;
-
-	/*display: flex;          --- каталог.     
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;*/
-
+	
 }
 
-.page-catalog .page-title {
-	utline: 5px solid rgba(0, 255, 0, 0.7);
-	outline-offset: -5px;
-	grid-column: 1 / -1;
+
+.container{
+   margin: 0 auto;
+   padding: 0;
+   width: 1160px;
+   display: grid;
+   grid-template-columns:400px 760px;
+   outline: 5px solid black;
+   outline-offset: -5px;
 }
+
+
 
 .page-title{
-	width: 1160px;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+	outline-offset: -5px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 	color:var(--basic-black);
 	background-color:var(--basic-background-shade-gray);
 	text-align: center;
-	margin: 0px auto;
+	margin: 0;
 	padding: 0;
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -190,6 +185,7 @@ sort-current{
 	}
 
 	.catalog-list {
+
 		list-style:none;
 		display: flex;
 		flex-wrap: wrap;
@@ -206,6 +202,11 @@ sort-current{
 		background-color:var(--basic-white);
 		color:var(--medium-gray);
 	}
+
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
 
 	.catalog-item h3 {
 		font-size: 18px;
@@ -297,7 +298,10 @@ sort-current{
 
 	}
 	.pagination-button{
-	  
+
+	   padding-top: 25px;
+	   text-align: center;
+	   text-transform: uppercase;
        width: 260px;
        height: 50px;
        background-color: var(--basic-background-shade-gray);
