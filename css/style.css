@@ -30,7 +30,7 @@ body {
 	min-width: 1440px;
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif,"Arial";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -226,8 +226,8 @@ catalog-item-price
 .button-price {
 	color: var(--basic-white);
 	background-color: var(--basic-red);
-	border: none;
-	outline: none !important;
+	border:0;
+	
 }
 
 .button-price:hover {
@@ -331,7 +331,7 @@ catalog-item-price
 	grid-template-columns: 1fr 2fr min-content;
 	width: 1160px;
 	margin: 0 auto;
-	padding-top: 30px;
+	padding-top:38px;
 	align-items: center;
 	font-size: 16px;
 	line-height: 30px;
@@ -357,36 +357,52 @@ catalog-item-price
 	display: flex;
 	flex-wrap: wrap;
 	color: var(--basic-black);
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	
+	
 }
 
- .site-navigation-current {
-  /*еще поправлю*/
-  border-bottom:2px solid var(--basic-red);
+.site-navigation li{
+	padding: 10px 28px 0px 18px;
+}
+
+
+.site-navigation-current {
+	/*еще поправлю*/
+	border-bottom:2px solid var(--basic-red);
 }
 
 .site-navigation a,
 .user_nav a {
 	display: block;
 	
-	padding: 0px 20px;
+	
 }
 
 .user_nav a {
+	padding-top: 10px;
 	padding-left: 50px;
 }
 
 .user_nav .cart-link {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
 	position: relative;
 }
 
 .cart-link::before {
 	content: "";
 	position: absolute;
-	top: 7px;
-	left: 25px;
+	top: 16px;
+	left: 12px;
 	width: 15px;
 	height: 15px;
 	background-image: url("../img/cart-icon.svg");
@@ -418,31 +434,98 @@ catalog-item-price
 /* слайдер*/
 
 .sliders {
+
 	background-color: var(--basic-background-shade-gray);
 }
 
 .sliders-item a {}
 
 .slider-item {
+
+	padding-bottom:42px;
 	font-size: 16px;
 	line-height: 24px;
 }
 
-.slider-item {}
+.slider-controls {
+  position: absolute;
+  top:307px;
+  bottom:101px;
+  left:535px;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+  
+}
+
+.current:before {  
+  content:"";
+  position: absolute;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  top:0;
+  left:0;
+}  
+.current:after {  
+  content:"";
+  position: absolute;
+  background-color:var(--basic-white);
+  border: 2px solid #C1C1C1;
+  box-sizing: border-box;  
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  top: 5px;
+  left: 5px;
+  
+ 
+}  
+
+.slider-current {
+
+  display: block;
+}
+.slider-controls .current {
+	
+    /*background-color:var(--basic-white);
+  	border: 2px solid #C1C1C1;
+    box-sizing: border-box;
+  */
+}
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
 
 .slider-title {
+	margin: 0;
+	padding: 0;
+	padding-bottom:24px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
+	padding-top: 9px;
+
 }
 
+
 .sliders-list {
+	position: relative;
 	width: 1160px;
-	margin: 0px auto;
-	padding: 0;
+	margin:0px auto;
+	padding:0;
 	list-style: none;
 	display: flex;
 	align-items: center;
+
 }
 
 .sliders-list li {
@@ -451,14 +534,19 @@ catalog-item-price
 }
 
 .p1 {
-	padding-bottom: 38px;
+	color:#283136;
+	margin: 0;
+	padding: 0;
+	padding-top:5px;
+    padding-bottom:55px;
 }
 
-.sliders-list img {}
+
 
 .button-sliders {
-	border-radius: 3px;
-	padding: 10px 55px;
+	margin: 0px;
+	border-radius:3px;
+	padding: 17px 55px 14px 54px;
 	text-transform: uppercase;
 	text-align: center;
 	background: var(--basic-red);
@@ -477,11 +565,21 @@ catalog-item-price
 
 /* сервис */
 
-.services {}
+.services {
+	padding-top:70px;
+    padding-bottom:88px;
+
+	/*padding-top:89px; 
+	padding-bottom:75px;*/
+}
 
 .services a {}
 
 .services h3 {
+	margin:0;
+	padding:0;
+	padding-top:19px;
+	padding-bottom:15px;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
@@ -497,8 +595,8 @@ catalog-item-price
 	column-gap: 100px;
 	margin: 0 auto;
 	padding: 0;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	/*padding-top:89px;
+	padding-bottom:75px; */
 	list-style: none;
 }
 
@@ -511,11 +609,12 @@ catalog-item-price
 .services img {}
 
 .paragrah{
-	padding-bottom: 40px;
+	margin: 0;
+	padding-bottom: 49px;
 }
 .button-web {
-
-	padding: 18px 81px;
+   
+	padding: 19px 39px 15px 40px;
 	text-transform: uppercase;
 	text-align: center;
 	border-radius: 3px;
@@ -533,7 +632,7 @@ catalog-item-price
 }
 
 .button-app {
-	padding: 18px 81px;
+	padding: 17px 39px 15px 40px;
 	text-transform: uppercase;
 	text-align: center;
 	border-radius: 3px;
@@ -551,7 +650,7 @@ catalog-item-price
 }
 
 .button-pitch {
-	padding: 18px 81px;
+	padding: 17px 39px 15px 40px;
 	text-transform: uppercase;
 	text-align: center;
 	border-radius: 3px;
@@ -579,14 +678,16 @@ catalog-item-price
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top:30px;
+	padding-bottom: 75px;
+	color: #283136;
+	border-top: 2px solid var(--basic-background-shade-gray);
 }
 
-.about_1 {}
 
-.about_2 {}
-
+.about_2{
+	
+}
 .about-know {
 	margin: 0;
 	padding: 0;
@@ -595,10 +696,10 @@ catalog-item-price
 .about-know li{
 	padding-left: 32px;
 }
-.about-know .about-item::before {  /*Посмотри на секцую с процентами, если убрать вложенность*/
+.about-know .about-item::before {  
 	content: "";
 	position: absolute;
-	top: 12px;
+	top: 35px;
 	left: 0px;
 	width: 25px;
 	height: 2px;
@@ -606,18 +707,26 @@ catalog-item-price
 }
 
 .about-item {
+	margin:0;
+    padding-top:23px; 
 	list-style: none;
 	position: relative;
 	font-size: 16px;
 	line-height: 24px;
+
 }
 
+.about-item-2{
+
+	list-style: none;
+}
 
 
 .about-precision {
 	display: flex;
 	margin: 0;
 	padding: 0;
+	padding-top:30px;
 }
 
 .about-item-percent {
@@ -632,16 +741,35 @@ catalog-item-price
 }
 
 .about h4 {
+	margin:0;
+	padding-top: 40px;
+	text-transform: uppercase;
 	font-size: 16px;
 	line-height: 24px;
 }
 
+.about_2 h4 {
+	margin:0;
+	padding-top: 40px;
+	padding-left:18px;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 24px;
+}
 .about h3 {
+    margin:0;
+    padding-top:45px; 
+	color:var(--basic-black);
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
 }
 
+.about p{
+	padding-top:33px; 
+	margin:0;
+	
+}
 
 /*company*/
 
@@ -650,16 +778,13 @@ catalog-item-price
 	border-bottom: 2px solid var(--basic-background-shade-gray);
 	width: 1158px;
 	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 69px;
+
 }
 
 
-/*.company::before,
-  .company::after {
-	display: block;
-	content: "";
-	height: 2px;
-	background: var(--basic-background-shade-gray);
-	}*/
+
 
 	.company-list {
 		display: grid;
@@ -668,12 +793,12 @@ catalog-item-price
 		text-align: center;
 		margin: 0 auto;
 		padding: 0;
-		padding-top: 80px;
-		padding-bottom: 80px;
 		list-style: none;
 	}
 
 	.company-item {
+		
+		padding-top:10px;
 		height: 52px;
 	}
 
@@ -699,13 +824,21 @@ catalog-item-price
 	.main-footer {
 		margin: 0 auto;
 		padding-top: 80px;
+
 	}
 
 	.main-footer img {}
 
 	.benefit {
+		padding-top:10px;
 		margin: 0;
 		width: 560px;
+	}
+
+	.benefit p{
+        margin:0;
+        padding-top: 8px;
+		color: #444444;
 	}
 
 	.media {
@@ -714,8 +847,9 @@ catalog-item-price
 		grid-template-columns: 260px 560px;
 		/*260px 560px*/
 		grid-gap: 140px;
-		padding-top: 65px;
-		padding-bottom: 65px;
+		padding-top:58px;
+		padding-bottom:70px;
+		
 	}
 
 	.contacts {
@@ -738,7 +872,6 @@ catalog-item-price
 
 		position: absolute;
 		top: 54px;
-		left: 140px;
 		width: 319px;
 		height: 308px;
 		font-size: 16px;
@@ -749,34 +882,44 @@ catalog-item-price
 
 	.contacts-info h3 {
 		margin: 0;
-		padding: 30px 50px;
+		padding: 50px 76px 23px 50px;
 		font-size: 18px;
 		line-height: 30px;
 		color: var(--basic-black);
 	}
 
 	.address{
-		padding:0px 50px 70px 50px;
+		padding: 0px 50px 15px 50px;
 		margin: 0;
+	}
+
+
+
+	.address_p{
+		margin: 0px;
+		padding-bottom:55px;
 
 	}
 
-	.address a{
 
+	.address_a{
+		padding: 0px 50px 0px 50px;
 		color: var(--medium-gray);
 	}
-    
-    
+
+
 	.span {
+
+		font-weight: bold;
 		font-size: 36px;
 		line-height: 36px;
 		color: var(--basic-black);
 	}
 
 	.button-contacts {
-		margin: 0;
-		padding: 17px 44px;
-		margin-left:50px;
+		
+		padding: 17px 44px 15px 44px;
+		margin-left: 50px;
 		color: var(--basic-white);
 		background-color: var(--basic-red);
 		border-radius: 3px;
@@ -840,7 +983,7 @@ catalog-item-price
 }
 
 .modal {
-	/*display: none;*/
+	
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -889,7 +1032,6 @@ catalog-item-price
 	width: 21px;
 	height: 21px;
 	background-color: var(--basic-white);
-	border: 0;
 	cursor: pointer;
 }
 
@@ -947,6 +1089,7 @@ catalog-item-price
 
 
 .modal-send {
+	border: 0;
 	padding: 17px 83px;
 	text-transform: uppercase;
 	text-align: center;
