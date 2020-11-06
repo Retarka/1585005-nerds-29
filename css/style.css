@@ -442,7 +442,7 @@ img {
 	text-align: center;
 	background: var(--basic-background-shade-gray);
 	margin: 0;
-	display: none;
+	visibility: hidden;
 }
 
 .catalog-item:hover .block {
@@ -1247,7 +1247,7 @@ img {
 	left: 5px;
 	width: 21px;
 	height: 21px;
-	background-image: url(../img/xx.svg);
+	background-image: url(../img/close.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
