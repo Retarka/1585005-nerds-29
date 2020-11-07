@@ -150,6 +150,7 @@ img {
 	user-select: none;
 	padding-bottom: 20px;
 	color: var(--basic-dark-blue);
+	opacity: 1;
 }
 
 .filter-input-checkbox+label:hover::before,
@@ -162,12 +163,17 @@ img {
 	opacity: 1;
 }
 
-.filter-input-checkbox+label::disabled::before,
-.filter-input-checkbox:checked+label::disabled::after,
-.filter-input-radio+label::disabled::before,
-.filter-input-radio:checked+label::disabled::after{
-  opacity: 0.1;
+label[disabled]{
+	opacity: 0.1;
 }
+
+.filter-input-checkbox[disabled]+label::before,
+.filter-input-checkbox[disabled]:checked+label::after,
+.filter-input-radio[disabled]+label::before,
+.filter-input-radio[disabled]:checked+label::after{
+	opacity: 0.1;
+}
+
 
 
 .filter-input-checkbox:focus+label::before,
@@ -454,11 +460,11 @@ img {
 }
 
 .catalog-item:hover .block {
-	display: block;
+	visibility: visible;
 }
 
 .catalog-item:focus-within .block {
-	display: block;
+	visibility: visible;
 }
 
 .catalog-item:hover {
@@ -807,7 +813,7 @@ img {
 	text-align: center;
 	background: var(--basic-red);
 	display: inline-block;
-    vertical-align:middle;
+	vertical-align:middle;
 }
 
 .button-sliders:hover {
@@ -1086,6 +1092,7 @@ img {
 }
 
 .media {
+	position: relative;
 	margin: 0 auto;
 	width: 1160px;
 	display: grid;
@@ -1109,9 +1116,8 @@ img {
 	line-height: 18px;
 	color: var(--medium-gray);
 	background-color: var(--basic-white);
-	top:50%;
-	left:28%;
-	transform: translate(-50%, -50%);
+	left: 0;
+	bottom:270px;
 }
 
 .contacts-info h3 {
