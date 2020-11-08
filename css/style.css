@@ -1109,7 +1109,17 @@ img {
 
 .contacts {
 	height: 416px;
-	position: relative;
+	
+}
+
+.footer-iframe{
+	height: 416px;
+	width: 100%;
+	border: 0;
+	background-image: url(../img/map-marker.png);
+	background-size: 1440px 416px;
+	background-repeat: no-repeat;
+	background-position:center;
 }
 
 
